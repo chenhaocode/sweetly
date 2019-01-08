@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="Keywords" content="blog"/>
     <meta name="Description" content="blog"/>
-    <title>{{title}}</title>
+    <title>远洋的网上自留地</title>
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <!--Valine 的核心代码库:-->
+    <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
     <link rel="shortcut icon" href="/static/favicon.png"/>
     <link rel="stylesheet" type="text/css" href="/main.css" />
 </head>
@@ -36,9 +39,10 @@
 <br>
 <br>
     <!-- UY BEGIN -->
-<div id="vcomments"></div>
-         <script>
-        new Valine({
+<div id="vcomments"></div>         
+<script>
+    new Valine({
+    av: AV,  
     el: '#vcomments' ,
     appId: '9xv7BruNNkPofAy2j9xfjn4t-gzGzoHsz',
     appKey: 'jBVz6ajeS91iHsCngQqsc5BA',
