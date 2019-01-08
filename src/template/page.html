@@ -6,11 +6,11 @@
     <meta name="Keywords" content="blog"/>
     <meta name="Description" content="blog"/>
     <title>{{title}}</title>
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <!--Valine 的核心代码库:-->
+    <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
     <link rel="shortcut icon" href="/static/favicon.png"/>
     <link rel="stylesheet" type="text/css" href="/main.css" />
-    <script src="http://cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-    <!--Valine 的核心代码库:-->
-    <script src="http://unpkg.com/valine/dist/Valine.min.js"></script>
 </head>
 <body>
 <div class="main">
@@ -38,10 +38,8 @@
 </div>
 <br>
 <br>
-    <div id="disqus_thread"></div>
-	<div class="footer">
-		<div id="vcomments">
-</div>         <script>
+<div id="vcomments"></div>    
+	<script>
         new Valine({
     el: '#vcomments' ,
     appId: '9xv7BruNNkPofAy2j9xfjn4t-gzGzoHsz',
@@ -49,9 +47,8 @@
     notify:false, 
     verify:false, 
     avatar:'mm', 
-    placeholder: 'ヾﾉ≧∀≦)o来评论下吧!' 
-});
-    </script>
+    placeholder: 'ヾﾉ≧∀≦)o来评论下吧!' });    </script>
+	<div class="footer">
 		<p>© Copyright 2016 Designed by sweetly</p>
 	</div>
 </div>
